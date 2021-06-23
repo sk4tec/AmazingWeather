@@ -5,10 +5,6 @@
 //  Created by Sunjay Kalsi on 17/06/2021.
 //
 
-//Assumptions
-//1 I've only done the layout for phone, I apologise I don't know how to make the app support more than one device.
-//2 I've not implemented CoreData as I'm not familiar with setting it up from scratch
-
 import UIKit
 import Alamofire
 import SwiftyJSON
