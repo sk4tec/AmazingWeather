@@ -16,6 +16,7 @@
 		FB1DAF76267BDC7E005F7CC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB1DAF74267BDC7E005F7CC2 /* LaunchScreen.storyboard */; };
 		FB1DAF80267D21B8005F7CC2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1DAF7F267D21B8005F7CC2 /* Utilities.swift */; };
 		FB1DAF83267E6E61005F7CC2 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1DAF82267E6E61005F7CC2 /* WeatherModel.swift */; };
+		FBF15A602683C3490014B507 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBF15A5E2683C3490014B507 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FB1DAF77267BDC7E005F7CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB1DAF7F267D21B8005F7CC2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FB1DAF82267E6E61005F7CC2 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		FBF15A5F2683C3490014B507 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				FB1DAF82267E6E61005F7CC2 /* WeatherModel.swift */,
+				FBF15A5E2683C3490014B507 /* Model.xcdatamodeld */,
 			);
 			path = "\U0010Models";
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				FB1DAF80267D21B8005F7CC2 /* Utilities.swift in Sources */,
 				FB1DAF6C267BDC7D005F7CC2 /* SceneDelegate.swift in Sources */,
 				FB1DAF83267E6E61005F7CC2 /* WeatherModel.swift in Sources */,
+				FBF15A602683C3490014B507 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +449,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBF15A5E2683C3490014B507 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBF15A5F2683C3490014B507 /* Model.xcdatamodel */,
+			);
+			currentVersion = FBF15A5F2683C3490014B507 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FB1DAF5E267BDC7D005F7CC2 /* Project object */;
 }
