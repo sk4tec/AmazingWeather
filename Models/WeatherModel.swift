@@ -8,11 +8,11 @@
 import Foundation
 
 struct WeatherModel {
-    let locationName: String
-    let temp: Int
-    let humidity: Int
-    let sunriseUnixUtc: Int
-    let sunsetUnixUtc: Int
+    var locationName: String = ""
+    var temp: Int = 0
+    var humidity: Int = 0
+    var sunriseUnixUtc: Int = 0
+    var sunsetUnixUtc: Int = 0
     
     var sunriseDisplay: String {
         get {
@@ -24,13 +24,5 @@ struct WeatherModel {
         get {
             return Utilities.formatFromUnixUtcToPrettyTime(unixTime: sunsetUnixUtc)
         }
-    }
-    
-    init(locationName: String, temp: Int, humidity: Int, Sunrise: Int, Sunset: Int) {
-        self.locationName = locationName
-        self.temp = temp
-        self.humidity = humidity
-        self.sunriseUnixUtc = Sunrise
-        self.sunsetUnixUtc = Sunset
     }
 }
