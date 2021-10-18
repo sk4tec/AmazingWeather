@@ -2,7 +2,7 @@
 //  Network.swift
 //  AmazingWeather
 //
-//  Created by Sunjay Kalsi on 18/10/2021.
+//  Created by Sunjay Kalsi on 01/06/2021.
 //
 
 import Foundation
@@ -48,7 +48,6 @@ struct Network {
             case .failure(let error):
                 print(error)
                 completion(nil)
-                // we need to load old data from the DB, if we have any?
             }
         }
     }

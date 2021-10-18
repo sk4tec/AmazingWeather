@@ -2,7 +2,7 @@
 //  Utilities.swift
 //  AmazingWeather
 //
-//  Created by Sunjay Kalsi on 18/06/2021.
+//  Created by Sunjay Kalsi on 01/06/2021.
 //
 
 import Foundation
