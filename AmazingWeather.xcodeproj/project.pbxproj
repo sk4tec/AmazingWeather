@@ -18,6 +18,7 @@
 		FB1DAF83267E6E61005F7CC2 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1DAF82267E6E61005F7CC2 /* WeatherModel.swift */; };
 		FB7E0FB7271DEFAF0001B69D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E0FB6271DEFAF0001B69D /* ViewModel.swift */; };
 		FB7E0FBB271E078E0001B69D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E0FBA271E078E0001B69D /* Network.swift */; };
+		FB99268A271F4EBC0013CC9C /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB992689271F4EBC0013CC9C /* WeatherResponse.swift */; };
 		FBF15A602683C3490014B507 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBF15A5E2683C3490014B507 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		FB1DAF82267E6E61005F7CC2 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		FB7E0FB6271DEFAF0001B69D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FB7E0FBA271E078E0001B69D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FB992689271F4EBC0013CC9C /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		FBF15A5F2683C3490014B507 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +126,7 @@
 		FB1DAF81267E6E4B005F7CC2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FB992689271F4EBC0013CC9C /* WeatherResponse.swift */,
 				FB1DAF82267E6E61005F7CC2 /* WeatherModel.swift */,
 				FBF15A5E2683C3490014B507 /* Model.xcdatamodeld */,
 			);
@@ -267,6 +270,7 @@
 				FB1DAF6C267BDC7D005F7CC2 /* SceneDelegate.swift in Sources */,
 				FB1DAF83267E6E61005F7CC2 /* WeatherModel.swift in Sources */,
 				FBF15A602683C3490014B507 /* Model.xcdatamodeld in Sources */,
+				FB99268A271F4EBC0013CC9C /* WeatherResponse.swift in Sources */,
 				FB7E0FB7271DEFAF0001B69D /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
