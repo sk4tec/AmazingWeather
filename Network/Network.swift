@@ -37,9 +37,14 @@ struct Network {
             switch response.result {
             case .success(let value):
                 //decode the whole object
-                let weatherData = try? JSONDecoder().decode(WeatherData.self, from: response.data!)
+                //let weatherData = try? JSONDecoder().decode(WeatherData.self, from: response.data!)
                 
-                print(weatherData)
+                do {
+                    let weatherData = try JSONDecoder().decode(WeatherData.self, from: response.data!)
+                    print(weatherData)
+                } catch  {
+                    print("error")
+                }
                 
                 let json = JSON(value)
                 weatherModel = WeatherModel()
