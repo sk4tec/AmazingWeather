@@ -8,6 +8,5 @@ target 'AmazingWeather' do
   # Pods for AmazingWeather
 
 pod 'Alamofire', '~> 5.2'
-pod 'SwiftyJSON'
 
 end

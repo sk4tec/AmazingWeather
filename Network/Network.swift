@@ -7,7 +7,7 @@
 
 import Foundation
 import Alamofire
-//https://openweathermap.org/current
+
 struct Network {
     private let weatherApiKey = "062487fc4b8c1f4cf2c6e584511b54ef"
     private let apiBaseURL = "https://api.openweathermap.org/data/2.5/weather?q="
@@ -37,7 +37,6 @@ struct Network {
             case .success:
 
                 let weatherData = try? JSONDecoder().decode(WeatherData.self, from: response.data!)
-                //print(weatherData)
                 
                 weatherModel = WeatherModel()
                 weatherModel?.locationName = weatherData?.name ?? ""
