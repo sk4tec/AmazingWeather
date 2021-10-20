@@ -42,8 +42,8 @@ struct Network {
                 do {
                     let weatherData = try JSONDecoder().decode(WeatherData.self, from: response.data!)
                     print(weatherData)
-                } catch  {
-                    print("error")
+                } catch let whatError  {
+                    print("The Error \(whatError)")
                 }
                 
                 let json = JSON(value)
