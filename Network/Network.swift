@@ -7,7 +7,6 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
 //https://openweathermap.org/current
 struct Network {
     private let weatherApiKey = "062487fc4b8c1f4cf2c6e584511b54ef"
@@ -27,7 +26,7 @@ struct Network {
         return cityWeathers
     }
     
-    
+    // https://openweathermap.org/current
     func loadWeatherData(city: String, completion: @escaping (WeatherModel?) -> Void) {
         let completeUrl = apiBaseURL + city + "&appid=" + weatherApiKey + measurementUnits
         
@@ -35,24 +34,17 @@ struct Network {
         
         AF.request(completeUrl).responseJSON { response in
             switch response.result {
-            case .success(let value):
-                //decode the whole object
-                //let weatherData = try? JSONDecoder().decode(WeatherData.self, from: response.data!)
+            case .success:
+
+                let weatherData = try? JSONDecoder().decode(WeatherData.self, from: response.data!)
+                //print(weatherData)
                 
-                do {
-                    let weatherData = try JSONDecoder().decode(WeatherData.self, from: response.data!)
-                    print(weatherData)
-                } catch let whatError  {
-                    print("The Error \(whatError)")
-                }
-                
-                let json = JSON(value)
                 weatherModel = WeatherModel()
-                weatherModel?.locationName = city
-                weatherModel?.temp = json["main"]["temp"].number?.intValue ?? 0
-                weatherModel?.humidity = json["main"]["humidity"].number?.intValue ?? 0
-                weatherModel?.sunriseUnixUtc = json["sys"]["sunrise"].number?.intValue ?? 0
-                weatherModel?.sunsetUnixUtc = json["sys"]["sunset"].number?.intValue ?? 0
+                weatherModel?.locationName = weatherData?.name ?? ""
+                weatherModel?.temp = weatherData?.main?.temp ?? 0
+                weatherModel?.humidity = weatherData?.main?.humidity ?? 0
+                weatherModel?.sunriseUnixUtc = weatherData?.sys?.sunrise ?? 0
+                weatherModel?.sunsetUnixUtc = weatherData?.sys?.sunset ?? 0
                 
                 completion(weatherModel)
             case .failure(let error):

@@ -9,7 +9,7 @@ import Foundation
 
 struct WeatherModel {
     var locationName: String = ""
-    var temp: Int = 0
+    var temp: Double = 0
     var humidity: Int = 0
     var sunriseUnixUtc: Int = 0
     var sunsetUnixUtc: Int = 0
