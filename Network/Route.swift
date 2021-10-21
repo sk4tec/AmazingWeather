@@ -24,6 +24,7 @@ public protocol Route {
     var querytParameters: [URLQueryItem] {get set}
     
     // Any path items that we can then encode to the request string. These will be appended in the order they are found in the array
+    var pathParameters: [String] { get }
     
     func toRequst() -> URLRequest
 }
