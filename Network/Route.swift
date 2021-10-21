@@ -26,5 +26,5 @@ public protocol Route {
     // Any path items that we can then encode to the request string. These will be appended in the order they are found in the array
     var pathParameters: [String] { get }
     
-    func toRequst() -> URLRequest
+    func toRequst() -> URLRequest // this is the important func
 }
