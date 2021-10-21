@@ -19,6 +19,7 @@
 		FB7E0FB7271DEFAF0001B69D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E0FB6271DEFAF0001B69D /* ViewModel.swift */; };
 		FB7E0FBB271E078E0001B69D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E0FBA271E078E0001B69D /* Network.swift */; };
 		FB99268A271F4EBC0013CC9C /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB992689271F4EBC0013CC9C /* WeatherResponse.swift */; };
+		FBBDCB962721F2AE0020CF8F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBDCB952721F2AE0020CF8F /* Route.swift */; };
 		FBF15A602683C3490014B507 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBF15A5E2683C3490014B507 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		FB7E0FB6271DEFAF0001B69D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FB7E0FBA271E078E0001B69D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FB992689271F4EBC0013CC9C /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		FBBDCB952721F2AE0020CF8F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		FBF15A5F2683C3490014B507 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				FB7E0FBA271E078E0001B69D /* Network.swift */,
+				FBBDCB952721F2AE0020CF8F /* Route.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				FB1DAF6E267BDC7D005F7CC2 /* WeatherViewController.swift in Sources */,
 				FB1DAF6A267BDC7D005F7CC2 /* AppDelegate.swift in Sources */,
 				FB7E0FBB271E078E0001B69D /* Network.swift in Sources */,
+				FBBDCB962721F2AE0020CF8F /* Route.swift in Sources */,
 				FB1DAF80267D21B8005F7CC2 /* Utilities.swift in Sources */,
 				FB1DAF6C267BDC7D005F7CC2 /* SceneDelegate.swift in Sources */,
 				FB1DAF83267E6E61005F7CC2 /* WeatherModel.swift in Sources */,
